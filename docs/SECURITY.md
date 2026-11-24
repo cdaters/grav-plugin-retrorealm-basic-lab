@@ -6,4 +6,4 @@ Titles/manifest context are escaped; manual fragments are trusted installed HTML
 
 The bundled Computer has no telemetry, remote code service or subscription. Browser workspaces and exported files stay local unless shared; host page/asset requests can be logged normally. Native modules may implement different storage behavior and must document it. The platform license never grants rights to an installed game's text, data, names or artwork.
 
-Human screen-reader and physical-touch acceptance must be recorded separately from automated viewport checks. No public security contact or tracker exists until owner-approved repository publication; do not invent one or post sensitive reports publicly.
+Human screen-reader and physical-touch acceptance must be recorded separately from automated viewport checks. Send security-sensitive reports privately to craig@daters.net; use GitHub issues for non-sensitive beta feedback. Human VoiceOver and physical-device testing remain follow-up work.

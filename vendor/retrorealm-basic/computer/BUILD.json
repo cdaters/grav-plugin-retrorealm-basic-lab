@@ -1,8 +1,9 @@
 {
   "version": "0.7.0",
-  "build": "split1-review",
-  "licenseApplied": false,
-  "proposedLicense": "Apache-2.0",
-  "publicationAuthorized": false,
-  "sourceCommit": "e00bdb8a98a3601f06ebac546e513bfb727e6919"
+  "build": "beta1",
+  "license": "Apache-2.0",
+  "licenseApplied": true,
+  "publicationAuthorized": true,
+  "prerelease": true,
+  "sourceCommit": "0bceb402c7117bd43926123164ba82ba19956d22"
 }

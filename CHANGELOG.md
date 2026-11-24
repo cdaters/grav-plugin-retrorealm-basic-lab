@@ -12,4 +12,4 @@
     * Derive new module publication defaults from the manifest draft flag.
     * Normalize legacy manual-fragment h1 headings in exhibit pages without modifying standalone player files.
 
-Unpublished release preparation; Apache-2.0 awaits owner approval.
+Initial public beta under Apache-2.0; copyright 2026 Craig Daters. Bundled BASIC is pinned to the licensed beta release. Human VoiceOver and physical-device testing remain follow-up work.

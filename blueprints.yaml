@@ -6,7 +6,11 @@ description: Reusable BASIC program and game catalogs, native modules and a loca
 icon: gamepad
 author:
   name: RetroRealm
-license: Pending owner approval (Apache-2.0 proposed)
+license: Apache-2.0
+homepage: https://github.com/cdaters/grav-plugin-retrorealm-basic-lab
+bugs: https://github.com/cdaters/grav-plugin-retrorealm-basic-lab/issues
+docs: https://github.com/cdaters/grav-plugin-retrorealm-basic-lab/blob/main/docs/INSTALLATION.md
+repository: https://github.com/cdaters/grav-plugin-retrorealm-basic-lab
 keywords: [basic, retro, games, offline]
 compatibility:
   grav: ['2.0']

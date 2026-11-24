@@ -2,11 +2,11 @@
 
 A reusable Grav 2 / Admin 2 platform for interactive programs, native game modules and historical software exhibits. It includes a locally bundled, version-pinned RetroRealm BASIC Computer with seven original examples and an HTML manual. No runtime GitHub/CDN access is required.
 
-**0.7.0 · split2-review.** Release preparation only; Apache-2.0 and publication await owner approval. Historical games are separately installed content, not part of this repository or the proposed software license. The original Signal Station extension example is included under `examples/`, not automatically published.
+**v0.7.0 public beta · beta1.** Apache-2.0, copyright Craig Daters; see [LICENSE](LICENSE) and [NOTICE](NOTICE). [Release downloads](https://github.com/cdaters/grav-plugin-retrorealm-basic-lab/releases/tag/v0.7.0). Historical games are separately installed content, not part of this repository or its software license. The original Signal Station extension example is included under `examples/`, not automatically published.
 
 ## Install and review
 
-After release authorization, extract the complete plugin package as `user/plugins/retrorealm-basic-lab`. Back up the entire previous directory and site/environment config outside the web root; never overlay a private collection build, because old static assets could survive. The source checkout also contains the verified generated Computer mirror and can be installed without Node.
+Extract the complete plugin package as `user/plugins/retrorealm-basic-lab`. Back up the entire previous directory and site/environment config outside the web root; never overlay a private collection build, because old static assets could survive. The source checkout also contains the verified generated Computer mirror and can be installed without Node.
 
 Defaults enable `/basic-lab` and `/basic-lab/session/basic-session`. In Admin2, enable the plugin/Computer and choose an unused catalog prefix. Installed manifest packages automatically receive enable/publish/route/edition/columns/phosphor controls. The theme supplies normal branding and global navigation; plugin templates/styles stay scoped. There is no required global theme edit.
 
@@ -28,6 +28,6 @@ npm test
 npm run package
 ```
 
-The plugin package contains runtime files, documentation and the original extension example, not source tests/build tools/vendor duplication. The separate source archive includes the maintainable build/test inputs and pinned vendor. `dist/manifest.json` and `dist/archives.json` record exact inventories/hashes. No repository, release or GPM listing has been published by preparing these files.
+The plugin package contains runtime files, documentation and the original extension example, not source tests/build tools/vendor duplication. The separate source archive includes the maintainable build/test inputs and pinned vendor. `dist/manifest.json` and `dist/archives.json` record exact inventories/hashes. GitHub releases are separate from GPM indexing; no GPM submission is included in this beta.
 
-No historical source, adapted game database, scans, ROM, production theme/configuration or private history is included. Admin publish controls are navigation controls, not access control for files. Install only content authorized for the destination. Use `LICENSE-PENDING.md` and the proposed notices before making any software license claim.
+No historical source, adapted game database, scans, ROM, production theme/configuration or private history is included. Admin publish controls are navigation controls, not access control for files. Install only content authorized for the destination. Retain `LICENSE`, `NOTICE` and bundled BASIC notices. Feedback: [craig@daters.net](mailto:craig@daters.net) or [GitHub issues](https://github.com/cdaters/grav-plugin-retrorealm-basic-lab/issues). Human VoiceOver and physical-device testing remain public-beta follow-up work.

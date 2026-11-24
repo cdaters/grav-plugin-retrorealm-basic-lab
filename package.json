@@ -10,5 +10,15 @@
     "build": "node scripts/build.mjs",
     "test": "php tests/catalog.php && php tests/admin-fields.php && node --test tests/*.test.mjs",
     "package": "python3 scripts/package.py"
+  },
+  "license": "Apache-2.0",
+  "author": "Craig Daters",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdaters/grav-plugin-retrorealm-basic-lab.git"
+  },
+  "homepage": "https://github.com/cdaters/grav-plugin-retrorealm-basic-lab#readme",
+  "bugs": {
+    "url": "https://github.com/cdaters/grav-plugin-retrorealm-basic-lab/issues"
   }
 }
