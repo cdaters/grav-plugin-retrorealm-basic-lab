@@ -1,0 +1,9 @@
+{% extends 'basic-lab-base.html.twig' %}
+{% block javascripts %}{{ parent() }}{% do assets.addJs('plugin://retrorealm-basic-lab/assets/embed.js', { loading: 'defer' }) %}{% endblock %}
+{% block content %}
+<section class="basic-lab-play" aria-label="BASIC source interpreter">
+<nav class="basic-lab-links"><a href="{{ basic_environment.catalog_route|e('html_attr') }}">← BASIC Lab</a><a href="{{ basic_environment.player|e('html_attr') }}">Open standalone</a><a href="{{ (basic_environment.player|split('index.html')|first ~ 'manual/index.html')|e('html_attr') }}">BASIC guide</a></nav>
+<iframe data-basic-lab-player src="{{ basic_environment.player|e('html_attr') }}" title="BASIC Session source interpreter" width="100%" height="1000" allow="fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups" referrerpolicy="no-referrer"></iframe>
+<p class="basic-lab-meta">Your program stays on this device. Export a workspace and media image to keep portable copies.</p>
+</section>
+{% endblock %}

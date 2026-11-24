@@ -1,0 +1,10 @@
+{% extends 'basic-lab-base.html.twig' %}
+{% block content %}
+<article class="basic-lab-project">
+  <nav class="basic-lab-links"><a href="{{ basic_lab.catalog_route|e('html_attr') }}">← BASIC Lab</a><a class="basic-lab-button" href="{{ (basic_lab.route ~ '/play')|e('html_attr') }}">Enter terminal →</a></nav>
+  <header class="basic-lab-heading basic-lab-exhibit-heading"><p class="basic-lab-kicker">RETROREALM / PLAYABLE EXHIBIT</p><h1>{{ basic_lab.game.title|e }}</h1><p>{{ basic_lab.game.description|e }}</p><p class="basic-lab-meta">{{ basic_lab.game.edition|e }}</p><a class="basic-lab-button" href="{{ (basic_lab.route ~ '/play')|e('html_attr') }}">Play {{ basic_lab.game.title|e }} →</a></header>
+  {% include 'partials/basic-lab-exhibit-context.html.twig' %}
+  <div class="basic-lab-editorial">{{ basic_lab.manual|raw }}</div>
+  <section class="basic-lab-note"><h2>Available editions</h2><ul>{% for label in basic_lab.game.editions %}<li>{{ label|e }}</li>{% endfor %}</ul><p>{{ basic_lab.game.licensingStatus|e }}</p><p><a href="{{ basic_lab.player|e('html_attr') }}">Open the independent player</a></p></section>
+</article>
+{% endblock %}

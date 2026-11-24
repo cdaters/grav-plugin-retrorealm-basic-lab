@@ -1,0 +1,41 @@
+{
+  "manifestVersion": 1,
+  "id": "signal-station",
+  "title": "Signal Station",
+  "description": "An original two-state signal module demonstrating independent native player registration.",
+  "author": "RetroRealm BASIC Lab project",
+  "version": "0.7.0",
+  "edition": "Original extension example",
+  "adapter": "native",
+  "saveVersion": 1,
+  "rulesets": [
+    "original-1"
+  ],
+  "defaultRuleset": "original-1",
+  "editions": {
+    "original-1": "Original example"
+  },
+  "capabilities": [
+    "text-input"
+  ],
+  "licensingStatus": "Original project example; proposed Apache-2.0 pending owner approval.",
+  "references": [],
+  "entrypoint": "assets/games/signal-station/index.html",
+  "active": true,
+  "draft": true,
+  "downloadsPermitted": false,
+  "exhibit": {
+    "heading": "A small signal, a complete module.",
+    "description": "This newly written example demonstrates an independent player and metadata-driven exhibit. It has no historical game content.",
+    "facts": [
+      {
+        "label": "Commands",
+        "value": "STATUS, TOGGLE and RESET"
+      },
+      {
+        "label": "State",
+        "value": "In memory until the page closes; this example has no portable save interface."
+      }
+    ]
+  }
+}

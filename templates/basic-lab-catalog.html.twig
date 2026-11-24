@@ -1,0 +1,16 @@
+{% extends 'basic-lab-base.html.twig' %}
+{% block content %}
+<article class="basic-lab-library">
+<nav class="basic-lab-links" aria-label="Breadcrumb"><a href="{{ base_url_absolute|e('html_attr') }}">Home</a><span aria-current="page">BASIC Lab</span></nav>
+<header class="basic-lab-heading"><p class="basic-lab-kicker">RETROREALM / INTERACTIVE COLLECTION</p><h1>Small programs.<br><span>Entire worlds.</span></h1><p>{% if basic_lab_catalog %}Play through computing history, or write a little of your own. BASIC Lab brings the games, the stories and the blinking cursor together.{% else %}A small computer for big ideas. Learn with original examples, explore classic BASIC language profiles, and run programs of your own.{% endif %}</p><nav class="basic-lab-links" aria-label="Explore BASIC Lab"><a class="basic-lab-button" href="#computer">Open the BASIC Computer</a>{% if basic_lab_catalog %}<a href="#collection">Explore the games ↓</a>{% endif %}</nav></header>
+<section id="computer" class="basic-lab-computer"><div><p class="basic-lab-kicker">CREATE / RETROREALM BASIC</p><h2>A computer waiting for your first line.</h2><p>Write, edit and run real BASIC. Try an original example, explore four language profiles, or bring your own program. Everything runs on your device.</p>{% for entry in basic_lab_environments %}<a class="basic-lab-button" href="{{ entry.route|e('html_attr') }}">Start programming →</a>{% else %}<p>The BASIC Computer is not enabled on this installation.</p>{% endfor %}</div><pre class="basic-lab-preview" aria-label="Example BASIC program">10 PRINT "HELLO, EXPLORER"
+20 GOTO 40
+30 REM YOUR NEXT IDEA
+40 END
+
+READY &gt; <span aria-hidden="true">▌</span></pre></section>
+{% if basic_lab_catalog %}<section id="collection"><div class="basic-lab-section-title"><div><p class="basic-lab-kicker">PLAY / THE COLLECTION</p><h2>Worlds built from words</h2></div><p>Choose an exhibit. Find its story. Enter the terminal.</p></div><div class="basic-lab-cards">
+{% for entry in basic_lab_catalog %}<article class="basic-lab-card"><div class="basic-lab-card-mark" aria-hidden="true">0{{ loop.index }}<span>&gt;_</span></div><p class="basic-lab-kicker">PLAYABLE EXHIBIT</p><h3><a href="{{ entry.route|e('html_attr') }}">{{ entry.game.title|e }}</a></h3><p>{{ entry.game.description|e }}</p><div class="basic-lab-links"><a class="basic-lab-button" href="{{ (entry.route ~ '/play')|e('html_attr') }}">Play →</a><a href="{{ entry.route|e('html_attr') }}">Explore exhibit</a></div></article>{% endfor %}</div></section>{% endif %}
+<section class="basic-lab-note"><p class="basic-lab-kicker">EXPLORE / PRESERVING THE EXPERIENCE</p><h2>More than a screen of green text</h2><p>{% if basic_lab_catalog %}The collection’s games are trusted adaptations. {% endif %}The BASIC Computer is an independent interpreter that executes the source you give it. Original examples are included; historical listings are not bundled with the Computer.</p><p>{% if basic_lab_catalog %}Each exhibit identifies its authors, sources and publication status. {% endif %}Programs and media stay on your device; portable exports let you keep them.</p></section>
+</article>
+{% endblock %}

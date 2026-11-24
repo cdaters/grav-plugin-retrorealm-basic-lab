@@ -1,0 +1,10 @@
+enabled: true
+route: /basic-lab
+basic_session: true
+columns: 80
+theme: green
+saves: true
+exports: true
+source_links: true
+provenance: true
+games: {}

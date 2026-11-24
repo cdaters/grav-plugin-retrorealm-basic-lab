@@ -1,0 +1,2 @@
+'use strict';
+let on=false;document.querySelector('form').addEventListener('submit',e=>{e.preventDefault();const input=document.querySelector('#command'),command=input.value.trim().toUpperCase();if(command==='TOGGLE')on=!on;else if(command==='RESET')on=false;else if(command!=='STATUS'){document.querySelector('#notice').textContent='Use STATUS, TOGGLE or RESET.';return;}document.querySelector('#output').textContent='SIGNAL '+(on?'ON':'OFF');document.querySelector('#notice').textContent='State stays in this tab.';input.value='';input.focus();});

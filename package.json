@@ -1,0 +1,14 @@
+{
+  "name": "grav-plugin-retrorealm-basic-lab",
+  "version": "0.7.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "php tests/catalog.php && php tests/admin-fields.php && node --test tests/*.test.mjs",
+    "package": "python3 scripts/package.py"
+  }
+}

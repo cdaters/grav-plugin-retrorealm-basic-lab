@@ -1,0 +1,79 @@
+name: RetroRealm BASIC Lab
+slug: retrorealm-basic-lab
+type: plugin
+version: 0.7.0
+description: Reusable BASIC program and game catalogs, native modules and a locally bundled RetroRealm BASIC Computer.
+icon: gamepad
+author:
+  name: RetroRealm
+license: Pending owner approval (Apache-2.0 proposed)
+keywords: [basic, retro, games, offline]
+compatibility:
+  grav: ['2.0']
+dependencies:
+  - { name: grav, version: '>=2.0.0-rc.3' }
+form:
+  validation: strict
+  data-fields@: \Grav\Plugin\RetrorealmBasicLabPlugin::gameFields
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin enabled
+      highlight: 1
+      default: 1
+      options: { 1: Enabled, 0: Disabled }
+      validate: { type: bool }
+    basic_session:
+      type: toggle
+      label: BASIC Computer
+      help: Show the bundled RetroRealm BASIC Computer and original examples. Native game modules remain independent.
+      highlight: 1
+      default: 1
+      options: { 1: Enabled, 0: Disabled }
+      validate: { type: bool }
+    route:
+      type: text
+      label: Default catalog route prefix
+      default: /basic-lab
+      validate:
+        type: string
+        pattern: '^/[a-z0-9][a-z0-9/-]*$'
+    columns:
+      type: select
+      label: Logical terminal columns
+      default: 80
+      options: { 40: '40 columns', 80: '80 columns' }
+      validate: { type: int }
+    theme:
+      type: select
+      label: Default phosphor
+      default: green
+      options: { green: Green, amber: Amber, white: White }
+    saves:
+      type: toggle
+      label: Browser saves
+      highlight: 1
+      default: 1
+      options: { 1: Enabled, 0: Disabled }
+      validate: { type: bool }
+    exports:
+      type: toggle
+      label: Portable JSON export and import
+      highlight: 1
+      default: 1
+      options: { 1: Enabled, 0: Disabled }
+      validate: { type: bool }
+    source_links:
+      type: toggle
+      label: External historical source links
+      highlight: 1
+      default: 1
+      options: { 1: Show, 0: Hide }
+      validate: { type: bool }
+    provenance:
+      type: toggle
+      label: Player provenance panel
+      highlight: 1
+      default: 1
+      options: { 1: Show, 0: Hide }
+      validate: { type: bool }

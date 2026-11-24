@@ -1,0 +1,8 @@
+{% extends 'partials/base.html.twig' %}
+{% block body %}{% set hero_display = false %}{{ parent() }}{% endblock %}
+{% block hero %}{% endblock %}
+{% block stylesheets %}
+  {{ parent() }}
+  {% do assets.addCss('plugin://retrorealm-basic-lab/assets/embed.css') %}
+{% endblock %}
+{% block content_surround %}<div class="basic-lab-shell">{% block content %}{% endblock %}</div>{% endblock %}

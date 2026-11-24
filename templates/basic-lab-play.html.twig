@@ -1,0 +1,12 @@
+{% extends 'basic-lab-base.html.twig' %}
+{% block javascripts %}
+  {{ parent() }}
+  {% do assets.addJs('plugin://retrorealm-basic-lab/assets/embed.js', { loading: 'defer' }) %}
+{% endblock %}
+{% block content %}
+<section class="basic-lab-play" aria-label="BASIC Lab player">
+  <nav class="basic-lab-links"><a href="{{ basic_lab.catalog_route|e('html_attr') }}">← BASIC Lab</a><a href="{{ basic_lab.route|e('html_attr') }}">Handbook &amp; history</a><a href="{{ basic_lab.player|e('html_attr') }}">Open standalone</a></nav>
+  <iframe data-basic-lab-player src="{{ basic_lab.player|e('html_attr') }}" title="{{ basic_lab.game.title|e('html_attr') }} interactive player" width="100%" height="1000" allow="fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups" referrerpolicy="no-referrer" loading="eager"></iframe>
+  <p class="basic-lab-meta">Return to enter · HELP for reference · Saves remain in your browser. Export JSON to keep a portable copy.</p>
+</section>
+{% endblock %}

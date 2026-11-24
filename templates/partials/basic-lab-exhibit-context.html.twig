@@ -1,0 +1,6 @@
+{% if basic_lab.game.exhibit is defined %}
+<section class="basic-lab-exhibit-context" aria-label="About this exhibit">
+<div><p class="basic-lab-kicker">THE IDEA</p><h2>{{ basic_lab.game.exhibit.heading|e }}</h2><p>{{ basic_lab.game.exhibit.description|e }}</p></div>
+<dl>{% for fact in basic_lab.game.exhibit.facts %}<dt>{{ fact.label|e }}</dt><dd>{{ fact.value|e }}</dd>{% endfor %}</dl>
+</section>
+{% endif %}
