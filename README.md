@@ -2,7 +2,7 @@
 
 A reusable Grav 2 / Admin 2 platform for interactive programs, native game modules and historical software exhibits. It includes a locally bundled, version-pinned RetroRealm BASIC Computer with seven original examples and an HTML manual. No runtime GitHub/CDN access is required.
 
-**0.7.0 · split1-review.** Release preparation only; Apache-2.0 and publication await owner approval. Historical games are separately installed content, not part of this repository or the proposed software license. The original Signal Station extension example is included under `examples/`, not automatically published.
+**0.7.0 · split2-review.** Release preparation only; Apache-2.0 and publication await owner approval. Historical games are separately installed content, not part of this repository or the proposed software license. The original Signal Station extension example is included under `examples/`, not automatically published.
 
 ## Install and review
 

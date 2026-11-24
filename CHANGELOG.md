@@ -8,6 +8,7 @@
     * Exhibit context is validated per-package metadata; no title-specific shared template branches.
 
 3. [](#bugfix)
+    * Replace legacy title placeholders with generic exhibit/player page metadata.
     * Derive new module publication defaults from the manifest draft flag.
     * Normalize legacy manual-fragment h1 headings in exhibit pages without modifying standalone player files.
 
