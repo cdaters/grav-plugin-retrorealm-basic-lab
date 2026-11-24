@@ -1,9 +1,9 @@
 {
-  "version": "0.7.0",
+  "version": "0.7.1",
   "build": "beta1",
   "license": "Apache-2.0",
   "licenseApplied": true,
   "publicationAuthorized": true,
   "prerelease": true,
-  "sourceCommit": "0bceb402c7117bd43926123164ba82ba19956d22"
+  "sourceCommit": "d41f9af8ccb0ad7e557d064d4db4f8c1c651f88c"
 }

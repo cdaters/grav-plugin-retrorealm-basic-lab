@@ -2,7 +2,7 @@
 
 A reusable Grav 2 / Admin 2 platform for interactive programs, native game modules and historical software exhibits. It includes a locally bundled, version-pinned RetroRealm BASIC Computer with seven original examples and an HTML manual. No runtime GitHub/CDN access is required.
 
-**v0.7.0 public beta · beta1.** Apache-2.0, copyright Craig Daters; see [LICENSE](LICENSE) and [NOTICE](NOTICE). [Release downloads](https://github.com/cdaters/grav-plugin-retrorealm-basic-lab/releases/tag/v0.7.0). Historical games are separately installed content, not part of this repository or its software license. The original Signal Station extension example is included under `examples/`, not automatically published.
+**v0.7.1 public beta · beta1.** Apache-2.0, copyright Craig Daters; see [LICENSE](LICENSE) and [NOTICE](NOTICE). [Release downloads](https://github.com/cdaters/grav-plugin-retrorealm-basic-lab/releases/tag/v0.7.1). Historical games are separately installed content, not part of this repository or its software license. The original Signal Station extension example is included under `examples/`, not automatically published.
 
 ## Install and review
 
@@ -16,7 +16,7 @@ Defaults enable `/basic-lab` and `/basic-lab/session/basic-session`. In Admin2, 
 
 RetroRealm BASIC owns the tokenizer, parser, engine, profiles, devices, browser Computer, source editor, examples and language manual. BASIC Lab owns catalogs, exhibit/player pages, trusted registration, Admin settings and iframe integration. A site collection owns each game's code, instructions, attribution, rights and data. Removing Grav leaves the Computer and standalone players usable.
 
-`basic-runtime.lock.json` pins BASIC 0.7.0 to its source commit and upstream inventory hash; `vendor/retrorealm-basic` is the exact local release. The build verifies all bytes before producing `assets/environments/basic-session` and the plugin package. It never fetches code. Operator-installed native modules can have their own release/save versions and standalone builds.
+`basic-runtime.lock.json` pins BASIC 0.7.1 to its source commit and upstream inventory hash; `vendor/retrorealm-basic` is the exact local release. The build verifies all bytes before producing `assets/environments/basic-session` and the plugin package. It never fetches code. Operator-installed native modules can have their own release/save versions and standalone builds.
 
 ## Build and test
 

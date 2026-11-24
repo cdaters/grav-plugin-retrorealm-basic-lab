@@ -1,3 +1,9 @@
+# 0.7.1
+## 2026-11-24
+
+1. [](#bugfix)
+    * Pin the documentation-corrected RetroRealm BASIC 0.7.1 beta; preserve the manual security policy and feedback contact.
+
 # 0.7.0
 ## 2026-11-24
 

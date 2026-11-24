@@ -1,20 +1,20 @@
 {
   "package": "retrorealm-basic",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "build": "beta1",
-  "sourceCommit": "0bceb402c7117bd43926123164ba82ba19956d22",
+  "sourceCommit": "d41f9af8ccb0ad7e557d064d4db4f8c1c651f88c",
   "licenseApplied": true,
-  "upstreamManifestSha256": "6288b5b580faf719e31f8e1b264da755e2b2f16ee1ef78ba69067bdace7b66f6",
+  "upstreamManifestSha256": "8594b735055f8927f55e6d0249630a8973463dcb44b13a88b0a62535b7653625",
   "files": [
     {
       "path": "BUILD.json",
       "bytes": 215,
-      "sha256": "5e4b996fd84c0d54a53b227c00166640515411b7b03db0f421325043e72a0c9f"
+      "sha256": "35280151ff5a8e4b484ca5b29836e209f5953199778d4d642d5d62eb04deaee1"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 406,
-      "sha256": "cfdcce2b996c02cac9bdf19b17168b4777baea9f6317db64bbff438e05651666"
+      "bytes": 573,
+      "sha256": "9b93732c47eaebee763dc7ae06f0ed9547aac5a334a4b484e4f2b5484c35644e"
     },
     {
       "path": "examples/arrays.bas",
@@ -64,42 +64,42 @@
     {
       "path": "manifest.json",
       "bytes": 349,
-      "sha256": "228411544eaff6c162ac922f7b16061946c6001ae0bbc4d0b266827b60d04bc8"
+      "sha256": "58fdd80b31ce37d424de1a33d2cb98c4e1a7a4154dc95f944fb4d31c22531f3a"
     },
     {
       "path": "manual/about.html",
-      "bytes": 3559,
-      "sha256": "ad1af5d52d950924953adc13659c68b6834c6c55f91b241605c138d599fb70a4"
+      "bytes": 3592,
+      "sha256": "5428ab6f958d5f2d467f56b54cfa13b24053df0bfdbc21a8e952e59c3e5a5cfb"
     },
     {
       "path": "manual/devices.html",
       "bytes": 4170,
-      "sha256": "0f7a232620695ad34e622de418017c4b514df48eecd5af5c3de61a1f65126cca"
+      "sha256": "12e91b5653a83fc26280aa0c14daac35b4518b6d613e76980481650632717135"
     },
     {
       "path": "manual/dialects.html",
       "bytes": 2240,
-      "sha256": "1f6d3347fb7ea748746b700cc061336f0afdd3d083a166d161a0de67ceb5401c"
+      "sha256": "e294064aac16bfd01978dba2ecc3e18bfdac186c80e7d5c611a9e344f63a7d12"
     },
     {
       "path": "manual/examples.html",
       "bytes": 3086,
-      "sha256": "7bf1a981d0c6c6899f9a5b4ea7042b428f046327f7983c950c3dc8b72d84cc8d"
+      "sha256": "9fd4891882044f37aca173b26bade0ec38e63a85158a080286b9c3b0cb14a4e8"
     },
     {
       "path": "manual/getting-started.html",
       "bytes": 3097,
-      "sha256": "c5815057d80dc584b07557a5653fd3ca4083289f79c5aeecebfd666b1cfcea36"
+      "sha256": "c57a19a2f91d5a9f1c0b9db56fc8c2bc2af833bc2e5df83d191e2953070fb8dc"
     },
     {
       "path": "manual/index.html",
       "bytes": 3021,
-      "sha256": "2086155e51c0f4b252797b8e74060843017ced22b7c3585e02cbd506d78102a4"
+      "sha256": "d39cd022078cddd356cc23a6ef7e9838fd5dfe838ebd40de6ac1a53462468dae"
     },
     {
       "path": "manual/language.html",
       "bytes": 7866,
-      "sha256": "cc6e755c21cb849a8e97e80532070d2d2ee70ace1b8ad941e949e29cb5c02f98"
+      "sha256": "2b97e8cd5772b50f6f0ee1e8f6ea8e16a1ab47fd4a1de731b6c40283cad652ee"
     },
     {
       "path": "manual/manual.css",
@@ -109,37 +109,37 @@
     {
       "path": "manual/ms8k.html",
       "bytes": 2520,
-      "sha256": "dd98d65bebe97e50a12fa011d13b23f8ae2a8f2b54925c5ab269f0dd2c14a715"
+      "sha256": "e9e49ac93382005b52037728474168bcddb25dc95d17ac7a1d81aeef6fd67a78"
     },
     {
       "path": "manual/programmer.html",
       "bytes": 5150,
-      "sha256": "58fdeadbc6082e0a4c2ea575a788f8abeae256f2e9bc810a85a3e0874293b3e6"
+      "sha256": "fe0b600f150400d8d9a0aed6506b1f1b7402891e9a5f0145b4b432bc01b88de2"
     },
     {
       "path": "manual/swbasic.html",
       "bytes": 2658,
-      "sha256": "6aafe43900a04c15f5b694b02cfe7fac25e8d666c92e81ee4a3b108a2b47afa6"
+      "sha256": "4f82239af6d31bb09db57539482e25ebe79f8363ef76a159065d3ee85c3dc204"
     },
     {
       "path": "manual/tiny.html",
       "bytes": 2130,
-      "sha256": "ae937c13c8124f2b7490feec57960decdd579ffc3cca11caebdc41a75a6d0fe6"
+      "sha256": "b48e8162078ad6beb04eb0687ac348057ecc44e0d2b5fa0deca12fee264e956f"
     },
     {
       "path": "manual/troubleshooting.html",
       "bytes": 4455,
-      "sha256": "3313abb6ffe84974648aea90ee8f841f500dc54e7b8a76128135ca8fd9409b84"
+      "sha256": "ab718357b1f6ed6a66d3471d9a098fddca2b0b96db9818bb6be4fdb6de9406bf"
     },
     {
       "path": "manual/trs80.html",
       "bytes": 3364,
-      "sha256": "a4c88ca90b55a6172f64dc47216fefb87688af555eff0d609aae394830a008ba"
+      "sha256": "8f9a1e8096d69471cc377f7e8619842778d3107b7d526fcdfadb3338646aa6eb"
     },
     {
       "path": "manual/workspace.html",
       "bytes": 4253,
-      "sha256": "47ae9e9d0f54044729934ebf1b76fd638736561cb5d6424fd6d5fba3001621e8"
+      "sha256": "dee2d84b9200de6a1f709b4c3de1ae02135f754a82dbf7ca3de0528aaa2f4422"
     },
     {
       "path": "NOTICE",
@@ -154,7 +154,7 @@
     {
       "path": "README.md",
       "bytes": 1382,
-      "sha256": "e7787744f22c65dc0a4ea3bcb33b333ec282338a917b5e7c3469d9cf0c3a9207"
+      "sha256": "0e860f88e6375eabe824a2f7bb609a3bf4654c54aa9620ea0d23ef9bdf201de4"
     },
     {
       "path": "session.css",

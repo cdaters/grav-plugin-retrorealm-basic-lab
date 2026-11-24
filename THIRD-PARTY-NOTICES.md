@@ -1,6 +1,6 @@
 # Third-party notices
 
-This plugin bundles RetroRealm BASIC 0.7.0 under Apache-2.0, copyright 2026
+This plugin bundles RetroRealm BASIC 0.7.1 under Apache-2.0, copyright 2026
 Craig Daters. Its LICENSE and NOTICE accompany the bundled Computer. Exact
 source commit and file hashes are recorded in basic-runtime.lock.json.
 Grav/Admin are separately installed host software, not included here.
