@@ -39,12 +39,14 @@ final class RetrorealmBasicLabPlugin extends Plugin
         return $fields;
     }
 
-    /** Admin 2 serializes plugin blueprints without init(); use its explicit API hook. */
+    /** Older APIs omit dynamic fields; newer APIs resolve them before this hook. */
     public function onApiBlueprintResolved(Event $event): void
     {
         if (($event['context'] ?? '') !== 'plugin' || ($event['plugin'] ?? '') !== 'retrorealm-basic-lab') return;
         $fields = $event['fields'];
+        $existing = array_fill_keys(array_column($fields, 'name'), true);
         foreach (self::gameFields() as $name => $field) {
+            if (isset($existing[$name])) continue;
             $field['name'] = $name;
             if (isset($field['options'])) {
                 $options=[];foreach($field['options'] as $value=>$label)$options[]=['value'=>(string)$value,'label'=>$label];$field['options']=$options;

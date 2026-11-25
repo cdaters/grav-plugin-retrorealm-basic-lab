@@ -1,3 +1,9 @@
+# 0.7.2
+## 2026-11-24
+
+1. [](#bugfix)
+    * Avoid duplicate Admin 2 game fields when the API already resolves dynamic blueprint directives; retain compatibility with older APIs.
+
 # 0.7.1
 ## 2026-11-24
 

@@ -1,7 +1,7 @@
 name: RetroRealm BASIC Lab
 slug: retrorealm-basic-lab
 type: plugin
-version: 0.7.1
+version: 0.7.2
 description: Reusable BASIC program and game catalogs, native modules and a locally bundled RetroRealm BASIC Computer.
 icon: gamepad
 author:

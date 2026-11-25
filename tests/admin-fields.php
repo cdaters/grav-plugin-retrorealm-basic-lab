@@ -14,7 +14,14 @@ namespace {
   if(count($fields)!==12 || $fields['game__signal-station__published']['default']!==false || $fields['game__new-program__published']['default']!==true)throw new \Exception('Manifest-derived publication/fields failed');
   $event=new \RocketTheme\Toolbox\Event\Event(['context'=>'plugin','plugin'=>'retrorealm-basic-lab','fields'=>[]]);$plugin=new \Grav\Plugin\RetrorealmBasicLabPlugin();$plugin->onApiBlueprintResolved($event);
   if(count($event['fields'])!==12 || $event['fields'][0]['name']!=='game__new-program__enabled')throw new \Exception('Admin2 field event failed');
+  $resolved=$event['fields'];$resolved[0]['help']='Resolved by the API';
+  $event['fields']=$resolved;$plugin->onApiBlueprintResolved($event);
+  if($event['fields']!==$resolved)throw new \Exception('Resolved fields were duplicated or overwritten');
+  $partial=array_slice($resolved,0,7);$event['fields']=$partial;$plugin->onApiBlueprintResolved($event);
+  if(count($event['fields'])!==12 || count(array_unique(array_column($event['fields'],'name')))!==12 || array_slice($event['fields'],0,7)!==$partial)throw new \Exception('Partial dynamic resolution did not merge safely');
+  $unrelated=new \RocketTheme\Toolbox\Event\Event(['context'=>'theme','plugin'=>'retrorealm-basic-lab','fields'=>[]]);$plugin->onApiBlueprintResolved($unrelated);
+  if($unrelated['fields']!==[])throw new \Exception('Unrelated blueprint modified');
   unlink($tmp.'/games/new-program.json');if(count(\Grav\Plugin\RetrorealmBasicLabPlugin::gameFields())!==6)throw new \Exception('Module removal left fields');
-  echo "PASS: actual Admin2 event derives fields for two modules, draft defaults and removal\n";
+  echo "PASS: Admin2 legacy/resolved/partial fields remain unique and preserve values; draft defaults, unrelated contexts and removal\n";
  } finally {foreach(glob($tmp.'/classes/*') as $f)unlink($f);foreach(glob($tmp.'/games/*') as $f)unlink($f);unlink($tmp.'/retrorealm-basic-lab.php');rmdir($tmp.'/classes');rmdir($tmp.'/games');rmdir($tmp);}
 }

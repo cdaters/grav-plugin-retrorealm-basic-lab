@@ -19,3 +19,5 @@ Update package/release/blueprint/CHANGELOG consistently. Public repository: `htt
 Use PHP tests for manifest/exhibit/route rejection and Node tests for exact dependency/mirror pinning. Browser integration needs a separately installed Grav site and development-only Playwright. A production-like fixture must remain private if it uses a proprietary theme or site content. Never export that fixture, local accounts, or historical collection assets into this repository.
 
 The v0.7.0 tag and assets remain immutable. Version 0.7.1 corrects the public feedback link for hosts that rewrite email addresses. Keep the `email_off` comments around the intentionally public contact address; they preserve the static manual’s restrictive CSP. See https://developers.cloudflare.com/waf/tools/scrape-shield/email-address-obfuscation/. No global Cloudflare setting change is required.
+
+Version 0.7.2 makes the Admin blueprint hook idempotent. APIs that initialize dynamic directives already supply game fields; retain those serialized fields and append only missing names. Test both initialized and legacy API paths. BASIC remains pinned to 0.7.1; interpreter and game code are unchanged.
